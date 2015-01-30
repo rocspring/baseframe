@@ -1,0 +1,26 @@
+{
+    "name": "recommend-v3",
+    "description": "recommend-v3",
+    "version": "2.0.5",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "grunt": "~0.4.4",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-jshint": "~0.8.0",
+        "grunt-contrib-connect": "~0.7.1",
+        "grunt-contrib-qunit": "~0.4.0",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-contrib-copy": "~0.5.0",
+        "grunt-contrib-less": "~0.11.0",
+        "grunt-contrib-uglify": "~0.4.0",
+        "grunt-contrib-cssmin": "~0.9.0",
+        "grunt-contrib-imagemin": "~0.7.0",
+        "grunt-replace": "~0.7.6",
+        "grunt-git": "~0.2.8",
+        "grunt-unicode": "~0.1.3",
+        "grunt-base64image": "~0.0.3",
+        "load-grunt-tasks": "~0.4.0"
+    }
+}

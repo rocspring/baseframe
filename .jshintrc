@@ -1,0 +1,19 @@
+{
+    "curly": false,
+    "eqeqeq": false,
+    "immed": true,
+    "latedef": false,
+    "forin": false,
+    "newcap": false,
+    "unused": false,
+    "noarg": true,
+    "sub": true,
+    "undef": false,
+    "boss": true,
+    "eqnull": true,
+    "multistr": true,
+    "scripturl": true,
+    "loopfunc": true,
+    "evil": true,
+    "node": true
+}

@@ -1,0 +1,65 @@
+
+@import "../../node_modules/local-css-libs/lib/com/flex/codio/Flex.less";
+@import '_reset.less';
+@import '_mix.less';
+@import '_slideTips.less';
+
+@burl: "../../i/";
+
+html,body{min-height:100%;}
+html{overflow-x:hidden;-webkit-text-size-adjust:none;}
+body{font-family:Arial,Helvetica,sans-serif;font: 400 14px/1.5 helvetica,verdana,san-serif;}
+a, a:visited {
+text-decoration: none;
+color: #333;
+}
+.noDis{
+	display: none;
+}
+.navWrap,
+.cfx{&:after{content:'';clear:both;display:table;}}
+
+.hn{}
+.hn1{text-align:center;margin-bottom:10px; border-bottom: 1px solid #e7e7e7; padding-bottom: 10px; }
+.hn1 h4{font-size:22px;}
+.hn1 p{font-size:14px;}
+
+.stream{
+	.i{display:inline-block;vertical-align:middle;margin-top:-.24em;background:url("@{burl}i.png");.background-size(300px auto);}
+	.i1{width:14px;height:14px;background-position:-140px 0;}
+	.i2{width:20px;height:20px;background-position:-120px 0;}
+	.i3,.iFeedVideo{width:60px;height:60px;background-position:0 0;}
+	.i4,.iFeedGallery{width:60px;height:60px;background-position:-60px 0;}
+	.i5{width:25px;height:20px;background-position:-175px 0;}
+	.i6{width:14px;height:14px;background-position:-160px 0;}
+	.i7{width:20px;height:20px;background-position:-200px 0;}
+	.i8{width:14px;height:14px;background-position:-220px 0;}
+	.i9{width:20px;height:30px;background-position:-240px 0;}
+	.i10{width:20px;height:30px;background-position:-260px 0;}
+	.i11{width:30px;height:30px;background-position:-160px -20px;-webkit-animation: loading-anim 1s step-start infinite;-ms-animation: loading-anim 1s step-start infinite;animation: loading-anim 1s step-start infinite;}
+	.i12{width:30px;height:30px;background-position:-120px -20px;}
+	.i13{width:50px;height:50px;background-position:0px -60px;}
+	.i14{width:50px;height:50px;background-position:-60px -60px;}
+	.i15{width:50px;height:50px;background-position:-120px -60px;}
+	.i16{width:50px;height:50px;background-position:-180px -60px;}
+	.i17{width:20px;height:20px;background-position:-200px -20px;}
+
+}
+
+a {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+@-webkit-keyframes loading-anim{from{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);} 8.32%{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);} 8.33%{-webkit-transform:rotate(30deg);-moz-transform:rotate(30deg);-ms-transform:rotate(30deg);-o-transform:rotate(30deg);transform:rotate(30deg);} 16.65%{-webkit-transform:rotate(30deg);-moz-transform:rotate(30deg);-ms-transform:rotate(30deg);-o-transform:rotate(30deg);transform:rotate(30deg);} 16.66%{-webkit-transform:rotate(60deg);-moz-transform:rotate(60deg);-ms-transform:rotate(60deg);-o-transform:rotate(60deg);transform:rotate(60deg);} 24.99%{-webkit-transform:rotate(60deg);-moz-transform:rotate(60deg);-ms-transform:rotate(60deg);-o-transform:rotate(60deg);transform:rotate(60deg);} 25%{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg);} 33.32%{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg);} 33.33%{-webkit-transform:rotate(120deg);-moz-transform:rotate(120deg);-ms-transform:rotate(120deg);-o-transform:rotate(120deg);transform:rotate(120deg);} 41.65%{-webkit-transform:rotate(120deg);-moz-transform:rotate(120deg);-ms-transform:rotate(120deg);-o-transform:rotate(120deg);transform:rotate(120deg);} 41.66%{-webkit-transform:rotate(150deg);-moz-transform:rotate(150deg);-ms-transform:rotate(150deg);-o-transform:rotate(150deg);transform:rotate(150deg);} 49.99%{-webkit-transform:rotate(150deg);-moz-transform:rotate(150deg);-ms-transform:rotate(150deg);-o-transform:rotate(150deg);transform:rotate(150deg);} 50%{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);} 58.32%{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg);} 58.33%{-webkit-transform:rotate(210deg);-moz-transform:rotate(210deg);-ms-transform:rotate(210deg);-o-transform:rotate(210deg);transform:rotate(210deg);} 66.65%{-webkit-transform:rotate(210deg);-moz-transform:rotate(210deg);-ms-transform:rotate(210deg);-o-transform:rotate(210deg);transform:rotate(210deg);} 66.66%{-webkit-transform:rotate(240deg);-moz-transform:rotate(240deg);-ms-transform:rotate(240deg);-o-transform:rotate(240deg);transform:rotate(240deg);} 74.99%{-webkit-transform:rotate(240deg);-moz-transform:rotate(240deg);-ms-transform:rotate(240deg);-o-transform:rotate(240deg);transform:rotate(240deg);} 75%{-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-o-transform:rotate(270deg);transform:rotate(270deg);} 83.32%{-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-o-transform:rotate(270deg);transform:rotate(270deg);} 83.33%{-webkit-transform:rotate(300deg);-moz-transform:rotate(300deg);-ms-transform:rotate(300deg);-o-transform:rotate(300deg);transform:rotate(300deg);} 91.65%{-webkit-transform:rotate(300deg);-moz-transform:rotate(300deg);-ms-transform:rotate(300deg);-o-transform:rotate(300deg);transform:rotate(300deg);} 91.66%{-webkit-transform:rotate(330deg);-moz-transform:rotate(330deg);-ms-transform:rotate(330deg);-o-transform:rotate(330deg);transform:rotate(330deg);} 99.99%{-webkit-transform:rotate(330deg);-moz-transform:rotate(330deg);-ms-transform:rotate(330deg);-o-transform:rotate(330deg);transform:rotate(330deg);} to{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg);}}
+
+@import '_list.less';
+@import '_final.less';
+@import '_homeHead.less';
+@import '_ico.less';

@@ -1,0 +1,11 @@
+<link rel="stylesheet" type="text/css" href="../c/g.css">
+<script>
+less = {
+    dumpLineNumbers: "all"
+};
+setTimeout(function() {
+    less.watch();
+    localStorage.clear();
+}, 1000);
+</script>
+

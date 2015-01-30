@@ -1,0 +1,97 @@
+<!--#include file="inc/_head.shtml"-->
+<title></title>
+<!--#include file="inc/_link_g.shtml"-->
+</head>
+<body>
+
+<div class="header finalHeader fixed">
+    <div class="headerWrap">
+        <div class="tools">
+            <div class="opt reBack"><a href="#0" class="btn"><b><i class="i i5"></i></b></a></div>
+            <div class="opt toCmts"><a href="#0" class="btn"><b>816<i class="i i6"></i></b></a></div>
+            <div class="opt toShare"><a href="#0" class="btn"><b><i class="i i7"></i></b></a></div>
+        </div>
+        <div class="share show">
+            <div class="shareWrap">
+                <div><a href="javascript:;"><i class="i i13"></i></a></div>
+                <div><a href="javascript:;"><i class="i i14"></i></a></div>
+                <div><a href="javascript:;"><i class="i i15"></i></a></div>
+                <div><a href="javascript:;"><i class="i i16"></i></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="finalBody finalBody_current">
+    <div class="finalCnt">
+        <div class="pic pic_brand"><!-- @后端：有top图片时输出 -->
+            <div class="img"><img src="../../i/demos/2.jpg" alt=""></div>
+        </div>
+        <div class="h1">那些即将登陆 Xbox One的游 戏大作,有你钟爱的那款吗?</div>
+        <div class="inf">
+            <div class="opt toSource">爱范儿</div>
+            <div class="opt toDate">09-05 13:48</div>
+        </div>
+        <div class="cnt">
+            <div class="main">
+                <p class="p">去年，ChinaJoy度过了自己的10岁生日Party，历经十年，在国家新闻出版广电总局大力实施民族原创游戏出版产业政策推动下，ChinaJoy已经发展成为继德国gamescom游戏展后的亚洲最大、全球第二大互动娱乐展并，并已经成为一个集游戏出版产品展、游戏商务交流会议和游戏技术交流会议于一体的游戏行业综合性交流平台。</p>
+                <div class="pic pic_cnt"><!-- @后端：文章图片输出 -->
+                    <div class="img"><img src="../../i/demos/2.jpg" alt=""></div>
+                </div>
+                <p class="p">但是，近年来，ChinaJoy的辉煌成绩下出现了一些边缘化的因素，例如showgirl穿着暴露，转移玩家的注意力；厂商大规模发放周边造成玩家哄抢踩踏；过度使用明星宣传引起玩家拥挤事件，都使得ChinaJoy这个游戏展变得不纯粹起来。</p>
+                <p class="p">去年，ChinaJoy度过了自己的10岁生日Party，历经十年，在国家新闻出版广电总局大力实施民族原创游戏出版产业政策推动下，ChinaJoy已经发展成为继德国gamescom游戏展后的亚洲最大、全球第二大互动娱乐展并，并已经成为一个集游戏出版产品展、游戏商务交流会议和游戏技术交流会议于一体的游戏行业综合性交流平台。</p>
+                <p class="p">但是，近年来，ChinaJoy的辉煌成绩下出现了一些边缘化的因素，例如showgirl穿着暴露，转移玩家的注意力；厂商大规模发放周边造成玩家哄抢踩踏；过度使用明星宣传引起玩家拥挤事件，都使得ChinaJoy这个游戏展变得不纯粹起来。</p>
+            </div>
+            <div class="showMore">
+                <a href="#0" class="toLoad"><b>展开剩余(38%) <i class="i i8"></i></b></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="relatePosts">
+        <div class="h3">相关阅读</div>
+        <div class="posts">
+            <a href="#0" class="post">网易COO创办游戏公司获IDG近亿融资</a>
+            <a href="#0" class="post">完美世界Q2营收增长13.5%的背后故事 </a>
+            <a href="#0" class="post">探营盛大游戏研发揭秘《英雄年代3》</a>
+        </div>
+    </div>
+
+    <div class="nextArticle">
+        <div class="status static">
+            <div><i class="i i9"></i>上拉阅读下一篇</div>
+            <div><i class="i i10"></i>松开立即加载</div>
+            <div><i class="i i11"></i>加载中</div>
+            <div><i class="i i12"></i>网络不给力</div>
+        </div>
+        <div class="title">网易COO创办游戏公司获IDG近亿融资</div>
+    </div>
+</div>
+
+<!-- @后端：这个scrpt块不需要 -->
+<script>
+    var $ = function(s) { return document.querySelector(s); }
+    var start = function(e) {
+        var current = $('.finalBody_current');
+        var next = document.createElement('div');
+        next.className = 'finalBody';
+        next.innerHTML = 'content...loading......';
+        next.style.top = document.body.clientHeight + 'px';
+        document.body.appendChild(next);
+        next.classList.add('finalBody_next');
+        setTimeout(function(){
+            next.style.top = (document.body.clientHeight - screen.height) + 'px';
+            setTimeout(function(){
+                alert(9);
+                current.remove();
+                next.style.top = '';
+                next.classList = 'finalBody finalBody_current';
+            }, 1000);
+        }, 1000);
+    }
+    var trigger = $('.toLoad');
+    trigger.addEventListener('click', start, false);
+</script>
+
+</body>
+</html>

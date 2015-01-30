@@ -1,0 +1,90 @@
+@bubleWidth: 4px;
+@bubleHeight: 4px;
+@bubleBackground-color: #BCBBBB;
+@bubleBackground: @bubleBackground-color;
+
+.bubleQueen{.transform(translate3D(0,0,0));-webkit-animation:bubleQueenParent 4s cubic-bezier(.42,0,.58,1) 0 infinite normal;}
+.bubleQueen .bubles{position:relative;height:45px;width:320px;margin:0 auto;overflow:hidden;}
+.bubleQueen .buble{position:absolute;background:@bubleBackground;.background-size(100% 100%);border-radius:100%;width:@bubleWidth;height:@bubleHeight;.box-shadow(0 0 0px 0px @bubleBackground-color);left:0;top:50%;margin:-@bubleHeight / 2 0 0 -@bubleWidth / 2 - @bubleWidth;.transform(translate3D(0,0,0));-webkit-animation:bubleQueen 4s cubic-bezier(.42,0,.58,1) 0 infinite normal;/* TOTO: delete*/ text-indent:-99em;}
+.bubleQueen .buble:nth-child(1){-webkit-animation-name:bubleQueen1;}
+.bubleQueen .buble:nth-child(2){-webkit-animation-name:bubleQueen2;}
+.bubleQueen .buble:nth-child(3){-webkit-animation-name:bubleQueen3;}
+.bubleQueen .buble:nth-child(4){-webkit-animation-name:bubleQueen4;}
+.bubleQueen .buble:nth-child(5){-webkit-animation-name:bubleQueen5;}
+.bubleQueen .buble:nth-child(6){-webkit-animation-name:bubleQueen6;}
+.bubleQueen .buble:nth-child(7){-webkit-animation-name:bubleQueen7;}
+
+@max: 6;
+@setp: 4.5;
+#bubleQueen {
+    .frame(@n:0) {
+        @startA: 0 + @n * @setp;
+        @startB: 100 - @n * @setp;
+        @pauseA: 20 + @n * @setp;
+        @pauseB: 80 - @n * @setp;
+        @end: 100 - @n * @setp - 0.01;
+
+        @percent_start: ~'@{startA}%, @{startB}%';
+        @percent_pause: ~'@{pauseA}%, @{pauseB}%';
+        @percent_end: ~'@{end}%';
+
+        .bubleQueenStart() {.transform(translate3D(0,0,0) scale(1));}
+        .bubleQueenPause() {.transform(translate3D(170px,0,0));}
+        .bubleQueenEnd() {.transform(translate3D(350px,0,0) scale(1));}
+        .bubleQueenGrow(@n) {.transform(translate3D(170px,0,0) scale(1 + 0.12 * @n));}
+        .bubleQueenGrows(@n) when (@n = 0) {
+            22%, 79% {.bubleQueenGrow(1)}
+            27%, 74% {.bubleQueenGrow(2)}
+            32%, 69% {.bubleQueenGrow(3)}
+            37%, 64% {.bubleQueenGrow(4)}
+            42%, 59% {.bubleQueenGrow(5)}
+            47%, 54% {.bubleQueenGrow(6)}
+        }
+
+        @{percent_start} {.bubleQueenStart()}
+        @{percent_pause} {.bubleQueenPause()}
+        @{percent_end} {.bubleQueenEnd()}
+        .bubleQueenGrows(@n);
+    }
+    .parent() {
+        50%  {.transform(translate3D(-5px,0,0));}
+        100%  {.transform(translate3D(5px,0,0));}
+    }
+}
+
+
+.test(@name:a123){
+    @a:~'@-webkit-keyframes bubleQueen@{name}';
+    @{a} {
+        10% {width:100px;}
+    }
+}
+//.test();
+
+
+@-webkit-keyframes bubleQueen1{
+    #bubleQueen .frame(0);
+}
+@-webkit-keyframes bubleQueen2{
+    #bubleQueen .frame(1);
+}
+@-webkit-keyframes bubleQueen3{
+    #bubleQueen .frame(2);
+}
+@-webkit-keyframes bubleQueen4{
+    #bubleQueen .frame(3);
+}
+@-webkit-keyframes bubleQueen5{
+    #bubleQueen .frame(4);
+}
+@-webkit-keyframes bubleQueen6{
+    #bubleQueen .frame(5);
+}
+@-webkit-keyframes bubleQueen7{
+    #bubleQueen .frame(6);
+}
+@-webkit-keyframes bubleQueenParent{
+    #bubleQueen .parent();
+}
+/**/
+

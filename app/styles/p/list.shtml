@@ -1,0 +1,220 @@
+<!--#include file="inc/_head.shtml"-->
+<title></title>
+<!--#include file="inc/_link_g.shtml"-->
+</head>
+<body>
+
+<!-- <div class="header channelHeader">
+    <div class="headerWrap">
+        <div class="h2">搜狐科技</div>
+        <div class="opt reHome"><a href="#0" class="btn"><b><i class="i i2"></i></b></a></div>
+    </div>
+</div>
+ -->
+
+     <header class="homeHead">
+        <h1 class="logo"><a href="/"><i class="img"><img src="../../i/sohulogo.png" alt="搜狐"></i></a></h1>
+        <div class="aside">
+            <a href="#3" class="quickLink weatherTip">
+                <div class="ico">
+                    <div class="data pm"><div class="t h">PM2.5</div><div class="t l">999</div></div>
+                    <div class="img wSunny"></div><!-- @后端：天气名称对应天气图标，对应关系与“天气频道”相同。 -->
+                    <div class="data degrees"><div class="t h">35°</div><div class="t l">-35°</div></div>
+                </div>
+                <div class="des">北京</div>
+            </a>
+            <a href="#3" class="quickLink vsohu">
+                <div class="ico">
+                    <div class="img"></div>
+                </div>
+                <div class="des">热剧</div>
+            </a>
+            <a href="#3" class="quickLink email">
+                <div class="ico">
+                    <div class="img"></div>
+                </div>
+                <div class="des">邮件</div>
+            </a>
+            <a href="#3" class="quickLink apps" style="display:none;">
+                <div class="ico">
+                    <div class="img"></div>
+                </div>
+                <div class="des">应用</div>
+            </a>
+            <a href="#3" class="quickLink siteBook">
+                <div class="ico">
+                    <div class="img"></div>
+                </div>
+                <div class="des">名站</div>
+            </a>
+            <a href="#3" class="quickLink androidApk" style="display:none;">
+                <div class="ico">
+                    <div class="img"></div>
+                </div>
+                <div class="des">放到桌面</div>
+            </a>
+
+        </div>
+
+    </header>
+
+
+<div class="nav siteNav"><!-- @JS: 需要固顶显示时增加类名 fixed -->
+    <!-- <div class="navWrap">
+        <a href="#0" class="btn on"><b>国内</b></a>@后端：当前频道
+        <a href="#0" class="btn"><b>社会</b></a>
+        <a href="#0" class="btn"><b>军事</b></a>
+        <a href="#0" class="btn"><b>历史</b></a>
+        <a href="#0" class="btn"><b>图库</b></a>
+        <a href="#0" class="btn"><b>国内</b></a>
+        <a href="#0" class="btn"><b>社会</b></a>
+        <a href="#0" class="btn"><b>军事</b></a>
+        <a href="#0" class="btn"><b>历史</b></a>
+        <a href="#0" class="btn"><b>图库</b></a>
+    </div> -->
+</div>
+
+<section class="tips">
+    <div class="wrapper">
+        <div class="topic-info">
+            <ul class="topic-swipe" id="topic-swipe" style="width:960px;">
+                <li class="topic-item">
+                    <div class="img-l">
+                        <img id='topic-swipe-img'  onClick="window.location.href='text_new.html'" src="http://s1.rr.itc.cn/w/v/0/20130106101952_10.jpg" alt="汉宜高铁潜江段部分路基塌陷" border="0" class="topic_img" loaded="1" url="/img/jiaodiantu2012313-1.jpg" link="http://jsdev3.m.sohu.com/h5/css/msohu/v3/src/text.html" height="158px" width="320px">
+                        <div class="topic-title"><p>汉宜高铁潜江段部分路基塌陷</p></div>
+                    </div>
+                </li>
+                <li class="topic-item">
+                    <div class="img-l">
+                        <img src="http://m.sohu.com/images/loading.gif" alt="美士兵开枪扫射阿富汗平民致16死" border="0" class="topic_img" loaded="1" url="/img/jiaodiantu2012312-4.jpg" link="http://jsdev3.m.sohu.com/h5/css/msohu/v3/src/text.html">
+                        <div class="topic-title"><p>美士兵开枪扫射阿富汗平民致16死</p></div>
+                    </div>
+                </li>
+                <li class="topic-item">
+                    <div class="img-l">
+                        <img src="http://m.sohu.com/images/loading.gif" alt="CBA山西球迷围堵拉扯北京球员" border="0" class="topic_img" loaded="1" url="/img/jiaodiantu2012312-1.jpg" link="http://jsdev3.m.sohu.com/h5/css/msohu/v3/src/text.html">
+                        <div class="topic-title"><p>CBA山西球迷围堵拉扯北京球员</p></div>
+                    </div>
+                </li>
+            </ul>
+        <div class="page-wrapper"> <a class="page-prev"><img src="../../i/pic_prev_open.png" loaded="1" width="11"></a> <a class="page-next"><img src="../../i/pic_next.png" loaded="1" width="11"></a> </div>
+        </div>
+        <div class="slider-bar"></div>
+    </div>
+</section>
+
+<div class="stream">
+    <a href="#0" class="feed feed_full"><!-- @后端：带图带导读时 feed_full。默认 -->
+        <div class="title">新iPhone，中国与世界同步发售</div>
+        <div class="cnt">
+            <div class="pic">
+                <div class="img">
+                    <img src="../../i/demos/1.gif" alt="">
+                    <i class="i iFeedVideo"></i><!-- @后端：若是视频，输出此标签。默认无 -->
+                </div>
+            </div>
+            <div class="des">
+                <div class="brief">
+                    <div class="text">其中iPhone 5C为传闻已久的塑料外壳iPhone。</div>
+                    <div class="flag flag_hot">热议</div>
+                    <div class="flag flag_exclusive">独家</div>
+                </div>
+                <div class="info">
+                    <div class="opt toSource">爱范儿</div>
+                    <div class="opt toCmts"><i class="i i1"></i>106</div>
+                </div>
+            </div>
+        </div>
+        <div class="statis"><img src="../../i/statis.png" alt=""></div>
+    </a>
+
+    <a href="#0" class="feed feed_lite"><!-- @后端：带图不带导读时 feed_lite -->
+        <div class="title">新iPhone，中国与世界同步发售</div>
+        <div class="cnt">
+            <div class="pic">
+                <div class="img">
+                    <img src="../../i/demos/1.gif" alt="">
+                    <i class="i iFeedVideo"></i><!-- @后端：若是视频，输出此标签。默认无 -->
+                </div>
+            </div>
+            <div class="des">
+                <div class="info">
+                    <div class="opt toSource">爱范儿</div>
+                    <div class="opt toCmts"><i class="i i1"></i>106</div>
+                </div>
+            </div>
+        </div>
+        <div class="statis"><img src="../../i/statis.png" alt=""></div>
+    </a>
+
+    <a href="#0" class="feed feed_gallery"><!-- @后端：图库时 feed_gallery -->
+        <div class="title">新iPhone，中国与世界同步发售</div>
+        <div class="cnt">
+            <div class="pic">
+                <div class="img">
+                    <img src="../../i/demos/1.gif" alt="">
+                    <i class="i iFeedGallery">12</i><!-- @后端：图库时 -->
+                </div>
+            </div>
+            <div class="des">
+                <div class="info">
+                    <div class="opt toSource">爱范儿</div>
+                    <div class="opt toCmts"><i class="i i1"></i>106</div>
+                </div>
+            </div>
+        </div>
+        <div class="statis"><img src="../../i/statis.png" alt=""></div>
+    </a>
+
+    <a href="#0" class="feed feed_simple"><!-- @后端：只有标签时 feed_simple -->
+        <div class="title">微软前高管谈鲍尔默：他是英雄，但未将微软带出炼狱</div>
+        <div class="cnt">
+            <div class="des">
+                <div class="info">
+                    <div class="opt toSource">爱范儿</div>
+                    <div class="opt toCmts"><i class="i i1"></i>106</div>
+                </div>
+            </div>
+        </div>
+        <div class="statis"><img src="../../i/statis.png" alt=""></div>
+    </a>
+
+    <a href="#0" class="feed feed_twoPics"><!-- @后端：带两张图时 feed_twoPics -->
+        <div class="title">新iPhone，中国与世界同步发售</div>
+        <div class="cnt">
+            <div class="pic">
+                <div class="img">
+                    <img src="../../i/demos/1.gif" alt="">
+                </div>
+                <div class="img">
+                    <img src="../../i/demos/1.gif" alt="">
+                </div>
+            </div>
+            <div class="des">
+                <div class="info">
+                    <div class="opt toSource">爱范儿</div>
+                    <div class="opt toCmts"><i class="i i1"></i>106</div>
+                </div>
+            </div>
+        </div>
+        <div class="statis"><img src="../../i/statis.png" alt=""></div>
+    </a>
+</div>
+
+<div class="loadMore">
+    <div class="loading bubleQueen">
+        <ul class="bubles">
+            <li class="buble">1</li>
+            <li class="buble">2</li>
+            <li class="buble">3</li>
+            <li class="buble">4</li>
+            <li class="buble">5</li>
+            <li class="buble">6</li>
+            <li class="buble">7</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+<script src= "http://jsdev7.m.sohu.com/h5/js/tags/v3/msohufeed/test/home.js"> </script>
+</html>
